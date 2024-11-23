@@ -1,0 +1,1 @@
+This game asks the user to guess a word on the basis of the hints given.
