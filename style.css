@@ -12,15 +12,21 @@ h1 {
 /* Style for the card and border  */
 .card {
     min-width: 30%;
-    width: 50vh;
+    width: 50%;
     min-height: 30vh;
-
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     margin: auto;
     padding: 2%;
 }
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
 
 /* Font and display style for complete body */
 body {
@@ -46,3 +52,47 @@ input {
 #displayWord {
     font-size: xx-large;
 }
+
+/* Responsive design using media queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 95%; /* Adjust width for smaller devices */
+        padding: 1rem;
+    }
+
+    input {
+        width: 40px; /* Adjust input size */
+        font-size: 0.9rem;
+    }
+
+    #displayWord {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller font for smaller devices */
+    }
+
+    .card {
+        width: 100%; /* Full width for very small devices */
+        padding: 0.8rem;
+    }
+
+    input {
+        width: 30px; /* Compact input box */
+        font-size: 0.8rem;
+    }
+
+    #displayWord {
+        font-size: 1.2rem;
+    }
+}
+
+
